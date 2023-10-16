@@ -10,6 +10,8 @@ public class Calculator
         add();
         System.out.println("Subtraction");
         delete();
+        System.out.println("Multiplication");
+        mult();
     }
 
     public static void add()
@@ -35,6 +37,18 @@ public class Calculator
         int secondNumber = inputs.nextInt();
 
         int total = firstNumber - secondNumber;
+        System.out.println("The final number is " + total);
+    }
+    public static void mult()
+    {
+        System.out.println("Please your first number :");
+        Scanner inputs = new Scanner(System.in);
+        int firstNumber = inputs.nextInt();
+
+        System.out.println("Please your second number :");
+        int secondNumber = inputs.nextInt();
+
+        int total = firstNumber * secondNumber;
         System.out.println("The final number is " + total);
     }
 }
